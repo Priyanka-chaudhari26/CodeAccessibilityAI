@@ -1,0 +1,3 @@
+[submodule "server"]
+	path = server
+	url = https://github.com/Priyanka-chaudhari26/CodeAccessibilityAI-backend.git
