@@ -9,7 +9,6 @@
    <img src="https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F-red&color=black" alt="Built with Love">
    <br/>
    <h3>Dev Tools for All</h3>
-   <br/>
 </div>
 
 <h4 align="center">A web-based suite of tools designed to make software development more accessible to everyone, especially people with visual impairments, powered by LLM.</h4>
