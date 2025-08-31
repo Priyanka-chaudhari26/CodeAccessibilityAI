@@ -12,7 +12,7 @@
    <br/>
 </div>
 
-A web-based suite of tools designed to make software development more accessible to everyone, especially people with visual impairments, powered by LLM.
+<h4 align="center">A web-based suite of tools designed to make software development more accessible to everyone, especially people with visual impairments, powered by LLM.</h4>
 
 ## 🚀 Features
 
