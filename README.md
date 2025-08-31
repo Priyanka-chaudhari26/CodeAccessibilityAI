@@ -1,13 +1,16 @@
-# 💻 Code Accessibility AI 💻
-![React](https://img.shields.io/badge/Frontend-React-blue?logo=react&logoColor=white) 
-![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js&logoColor=white) 
-![Express](https://img.shields.io/badge/Framework-Express-black?logo=express&logoColor=white)
-![LLM](https://img.shields.io/badge/AI-Google%20Gemini-orange)
-![Built with Love](https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F-red)
-![Hackathon Project](https://img.shields.io/badge/Project-Hackathon-blueviolet)
-
-
-**Dev Tools for All**
+<div align="center">
+   <h1>💻 Code Accessibility AI 💻</h1>
+   <br/>
+   <img src="https://img.shields.io/badge/Frontend-React-blue?logo=react&logoColor=white" alt="React">
+   <img src="https://img.shields.io/badge/Backend-Node.js-green?logo=node.js&logoColor=white" alt="Node.js">
+   <img src="https://img.shields.io/badge/Framework-Express-black?logo=express&logoColor=white" alt="Express">
+   <img src="https://img.shields.io/badge/AI-Google%20Gemini-orange" alt="LLM">
+   <img src="https://img.shields.io/badge/Project-Hackathon-blueviolet" alt="Hackathon Project">
+   <img src="https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F-red&color=black" alt="Built with Love">
+   <br/>
+   <h3>Dev Tools for All</h3>
+   <br/>
+</div>
 
 A web-based suite of tools designed to make software development more accessible to everyone, especially people with visual impairments, powered by LLM.
 
