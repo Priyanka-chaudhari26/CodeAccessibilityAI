@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import {CodeIcon } from "@phosphor-icons/react";
 
 const VoiceCommander = ({ setSelectedFeature }) => {
   const {
@@ -58,7 +59,7 @@ const VoiceCommander = ({ setSelectedFeature }) => {
   return (
     <div>
       <header className="header-content" tabIndex="0" onClick={() => setSelectedFeature(null)} onKeyDown={(e) => e.key === 'Enter' && setSelectedFeature(null)}>
-        <h1 style={{ textAlign: 'center' }}>Code Accessibility AI</h1>
+        <h1 style={{ textAlign: 'center' }}>Code Accessibility AI <CodeIcon size={43} color="#bb86fc" weight="bold" /></h1>
         <p style={{ textAlign: 'center' }}>Your AI-powered partner for accessible development</p>
       </header>
       <div className="card-voice">

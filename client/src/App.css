@@ -17,6 +17,7 @@ body {
 }
 
 .grid-container {
+  padding-top: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -54,14 +55,22 @@ body {
 .card {
   background: linear-gradient(145deg, #8e44ad, #3498db);
   border-radius: 10px;
+  border-color: #8e44ad;
+  border-width: 2px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  padding: 1rem 5rem;
+  padding: 0.3rem;
   margin-bottom: 2rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
+.card-info{
+  text-align: center;
+  padding: 1rem;
+}
 .card-explainer {
   background: #35373c;
   border-radius: 10px;
@@ -84,7 +93,7 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px) scale(1.02);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   background: linear-gradient(145deg, #9b59b6, #2980b9);
 }

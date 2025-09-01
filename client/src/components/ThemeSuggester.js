@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {CodeIcon } from "@phosphor-icons/react";
 import "./ThemeSuggester.css";
 
 const ThemeSuggester = ({ setSelectedFeature }) => {
@@ -19,6 +20,7 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
       const data = await response.json();
       if (response.ok) {
         setTheme(data.theme);
+        console.log(data.theme);
       } else {
         throw new Error(data.error || "Failed to fetch theme");
       }
@@ -36,7 +38,7 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
         onClick={() => setSelectedFeature(null)}
         onKeyDown={(e) => e.key === "Enter" && setSelectedFeature(null)}
       >
-        <h1 style={{ textAlign: "center" }}>Code Accessibility AI</h1>
+        <h1 style={{ textAlign: "center" }}>Code Accessibility AI <CodeIcon size={43} color="#bb86fc" weight="bold" /></h1>
         <p style={{ textAlign: "center" }}>
           Your AI-powered partner for accessible development
         </p>
@@ -48,26 +50,30 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
           Enter a topic to get UI theme suggestions for color-blind or visually
           impaired users.
         </p>
+        <div style={{display:'flex',flexDirection:'row', justifyContent:'space-around'}}>
         <input
           type="text"
           value={topic}
           onChange={(e) => setTopic(e.target.value)}
           placeholder="e.g., 'A calming website for a yoga studio'"
+          style={{width:'70%'}}
         />
-        <button onClick={getTheme} disabled={loading}>
+        <button onClick={getTheme} disabled={loading} style={{height:'40px'}}>
           {loading ? "Getting Theme..." : "Get Theme"}
         </button>
+        </div>
         {theme && (
           <div>
             <h2>Suggested Theme</h2>
             <div>
-              <h3>Color Palette</h3>
-              <div style={{ display: "flex", gap: "1rem" }}>
+              <h3 style={{textAlign:'left',paddingLeft:'2rem'}}>Color Palette</h3>
+              <div style={{ display: "flex", gap: "1rem",paddingLeft:'2rem'}}>
                 <div
                   style={{
                     backgroundColor: theme.palette.primary,
                     padding: "1rem",
-                    color: theme.palette.text,
+                    // color: theme.palette.text,
+                    color:"white",
                   }}
                 >
                   Primary
@@ -75,8 +81,9 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
                 <div
                   style={{
                     backgroundColor: theme.palette.secondary,
+                    color:"white",
                     padding: "1rem",
-                    color: theme.palette.text,
+                    // color: theme.palette.text,
                   }}
                 >
                   Secondary
@@ -84,8 +91,9 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
                 <div
                   style={{
                     backgroundColor: theme.palette.accent,
+                    color:"white",
                     padding: "1rem",
-                    color: theme.palette.text,
+                    // color: theme.palette.text,
                   }}
                 >
                   Accent
@@ -112,18 +120,28 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
               </div>
             </div>
             <div>
-              <h3>Fonts</h3>
-              <p>
-                <strong>Heading:</strong> {theme.fonts.heading}
-              </p>
-              <p>
-                <strong>Body:</strong> {theme.fonts.body}
-              </p>
+              <h3 style={{textAlign:"left",paddingLeft:"2rem"}}>Fonts</h3>
+              <table style={{marginLeft:"2rem"}}>
+                <tr style={{textAlign:'left'}}>
+                  <td style={{ paddingRight: '20px' }}><strong>Heading: </strong></td>
+                  <td>{theme.fonts.heading}</td>
+                </tr>
+                <tr style={{textAlign:'left'}}>
+                  <td style={{ paddingRight: '20px' }}><strong>Body: </strong></td>
+                  <td>{theme.fonts.body}</td>
+                </tr>
+              </table>
+              {/* <div style={{padding:'0.5rem 2rem 0.2rem 2rem',textAlign:"left"}}>
+                <strong>Heading: </strong> {theme.fonts.heading}
+              </div>
+              <div style={{padding:'0.5rem 2rem 0.2rem 2rem',textAlign:"left"}}>
+                <strong>Body: </strong> {theme.fonts.body}
+              </div> */}
             </div>
             {/* 👀 Preview Section */}
             <div
               style={{
-                marginTop: "2rem",
+                margin: "2rem",
                 padding: "1.5rem",
                 border: "1px solid #ccc",
                 borderRadius: "10px",
@@ -131,6 +149,7 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
                 color: theme.palette.text,
                 fontFamily: theme.fonts.body,
                 maxWidth: "500px",
+                alignItems:"center"
               }}
             >
               <h2
@@ -141,7 +160,7 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
               >
                 Welcome to My Themed Page
               </h2>
-              <p>
+              <p style={{color:theme.palette.text}}>
                 This is how body text will appear using the{" "}
                 <b>{theme.fonts.body}</b> font. Colors and contrast are based on
                 the suggested accessible palette.
