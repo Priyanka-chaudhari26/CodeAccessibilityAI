@@ -12,6 +12,11 @@
 </div>
 
 <h4 align="center">A web-based suite of tools designed to make software development more accessible to everyone, especially people with visual impairments, powered by LLM.</h4>
+<p align="center">
+  <img src="./client/src/assets/image.png" alt="Project Preview" width="600"/>
+</p>
+
+
 
 ## 🚀 Features
 
@@ -46,6 +51,13 @@ npm install
 # Create your .env file locally
 npm start
 ```
+Note: Make sure you have configured an API key for OpenRouter. 
+OpenRouter URL and Model I have used:
+```bash
+OPENROUTER_URL=https://openrouter.ai/api/v1/chat/completions
+OPENROUTER_MODEL=deepseek/deepseek-chat-v3.1:free
+```
+Make sure to set up OPENROUTER_URL, OPENROUTER_MODEL and OPENROUTER_API_KEY in `.env`
 
 ## ✨ Contribution Guidelines
 Even though this is a hackathon project, contributions and feedback are welcome:
