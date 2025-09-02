@@ -13,7 +13,7 @@
 
 <h4 align="center">A web-based suite of tools designed to make software development more accessible to everyone, especially people with visual impairments, powered by LLM.</h4>
 <p align="center">
-  <img src="./client/src/assets/image.png" alt="Project Preview" width="600"/>
+  <img src="./client/src/assets/landingpage.png" alt="Project Preview" width="600"/>
 </p>
 
 
