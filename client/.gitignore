@@ -11,6 +11,8 @@
 .pnp.js
 
 public/favicon.ico
+backend/
+server/
 
 # testing
 /coverage
