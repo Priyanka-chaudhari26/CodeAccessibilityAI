@@ -4,7 +4,10 @@
 /client/node_modules
 /server/node_modules
 /node_modules
+/App.test.js
+/setupTests.js
 /.pnp
+/reportWebVitals.js
 .pnp.js
 
 public/favicon.ico

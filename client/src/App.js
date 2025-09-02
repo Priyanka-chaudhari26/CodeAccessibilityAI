@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import CodeExplainer from './components/CodeExplainer';
 import VoiceCommander from './components/VoiceCommander';
 import ThemeSuggester from './components/ThemeSuggester';
-import { LightbulbIcon,MicrophoneStageIcon, PaletteIcon, CodeIcon } from "@phosphor-icons/react";
-import themesuggester from './assests/themesuggester.png';
-import explainer from './assests/explainer.png';
-import voicecommander from './assests/voicecmd.png';
+import { LightbulbIcon,MicrophoneStageIcon, PaletteIcon, CodeIcon, HeartIcon } from "@phosphor-icons/react";
+import themesuggester from './assests/codethemesuggester.png';
+import explainer from './assests/codeexplainer.png';
+import voicecommander from './assests/voicecommander.png';
 import './App.css';
 
 function App() {
@@ -55,6 +55,11 @@ function App() {
                 </div>
               </div>
             </main>
+            <footer>
+              Made with <HeartIcon size={19} color="#eb2c58ff" weight="fill" style={{ margin: "0 4px" }} /> <br/>
+              &copy; Priyanka Chaudhari
+            </footer>
+
           </div>
         );
     }

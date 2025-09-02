@@ -43,7 +43,6 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
           Your AI-powered partner for accessible development
         </p>
       </header>
-      {/* <button onClick={() => setSelectedFeature(null)}>Back</button> */}
       <div className="theme-suggester">
         <h1>Theme Suggester</h1>
         <p>
@@ -72,8 +71,7 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
                   style={{
                     backgroundColor: theme.palette.primary,
                     padding: "1rem",
-                    // color: theme.palette.text,
-                    color:"white",
+                     color:"white",
                   }}
                 >
                   Primary
@@ -83,7 +81,6 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
                     backgroundColor: theme.palette.secondary,
                     color:"white",
                     padding: "1rem",
-                    // color: theme.palette.text,
                   }}
                 >
                   Secondary
@@ -93,7 +90,6 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
                     backgroundColor: theme.palette.accent,
                     color:"white",
                     padding: "1rem",
-                    // color: theme.palette.text,
                   }}
                 >
                   Accent
@@ -131,12 +127,6 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
                   <td>{theme.fonts.body}</td>
                 </tr>
               </table>
-              {/* <div style={{padding:'0.5rem 2rem 0.2rem 2rem',textAlign:"left"}}>
-                <strong>Heading: </strong> {theme.fonts.heading}
-              </div>
-              <div style={{padding:'0.5rem 2rem 0.2rem 2rem',textAlign:"left"}}>
-                <strong>Body: </strong> {theme.fonts.body}
-              </div> */}
             </div>
             {/* 👀 Preview Section */}
             <div

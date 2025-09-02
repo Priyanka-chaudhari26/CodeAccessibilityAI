@@ -6,7 +6,7 @@ const CodeExplainer = ({ setSelectedFeature }) => {
   const [code, setCode] = useState('');
   const [explanation, setExplanation] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [isSpeaking, setIsSpeaking] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false); 
 
   useEffect(() => {
     const synth = window.speechSynthesis;

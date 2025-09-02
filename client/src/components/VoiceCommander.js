@@ -4,7 +4,7 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import {CodeIcon } from "@phosphor-icons/react";
 
-const VoiceCommander = ({ setSelectedFeature }) => {
+const VoiceCommander = ({ setSelectedFeature }) => { 
   const {
     transcript,
     listening,
