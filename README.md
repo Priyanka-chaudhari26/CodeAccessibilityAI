@@ -4,7 +4,7 @@
    <img src="https://img.shields.io/badge/Frontend-React-blue?logo=react&logoColor=white" alt="React">&nbsp;
    <img src="https://img.shields.io/badge/Backend-Node.js-green?logo=node.js&logoColor=white" alt="Node.js">&nbsp;
    <img src="https://img.shields.io/badge/Framework-Express-black?logo=express&logoColor=white" alt="Express">&nbsp;
-   <img src="https://img.shields.io/badge/AI-Google%20Gemini-orange" alt="LLM">&nbsp;
+   <img src="https://img.shields.io/badge/AI-Deepseek-red" alt="LLM">&nbsp;
    <img src="https://img.shields.io/badge/Project-Hackathon-blueviolet" alt="Hackathon Project">&nbsp;
    <img src="https://img.shields.io/badge/Built%20with-%E2%9D%A4%EF%B8%8F-red&color=black" alt="Built with Love">
    <br/>
@@ -27,14 +27,26 @@
 
 ## 🛠️ Tech Stack
 
-*   **Frontend:** ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-*   **Backend:** ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)  ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-*   **AI Features:** ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white)
+<table>
+   <tr>
+      <td><b>Frontend:<b></td>
+      <td><img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"/></td>
+   </tr>
+      <tr>
+          <td><b>Backend: <b></td>  
+         <td><img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"/>  &nbsp; <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB" /></td>
+       </tr>
+      <tr>
+         <td><b>AI Tools:</b></td>
+         <td><img src="https://img.shields.io/badge/Deepseek-0077b5" /> &nbsp;  <img src="https://img.shields.io/badge/OpenRouter-purple" /></td>
+      </tr>
+</table>
+
 
 ## 📁 Project Structure
 
-*   `/client`: Contains the React frontend application.
-*   `/server`: Contains the Node.js backend application.
+*   `client`: Contains the React frontend application.
+*   `server`: Contains the Node.js backend application.
 
 ## ⚡ Setup Instructions
 ### Frontend
