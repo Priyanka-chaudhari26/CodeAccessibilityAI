@@ -39,9 +39,9 @@ const ThemeSuggester = ({ setSelectedFeature }) => {
         onKeyDown={(e) => e.key === "Enter" && setSelectedFeature(null)}
       >
         <h1 style={{ textAlign: "center" }}>Code Accessibility AI <CodeIcon size={43} color="#bb86fc" weight="bold" /></h1>
-        <p style={{ textAlign: "center" }}>
+        <h3 style={{ textAlign: "center" }}>
           Your AI-powered partner for accessible development
-        </p>
+        </h3>
       </header>
       <div className="theme-suggester">
         <h1>Theme Suggester</h1>

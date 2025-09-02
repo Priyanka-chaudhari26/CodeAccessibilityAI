@@ -63,7 +63,7 @@ const CodeExplainer = ({ setSelectedFeature }) => {
       <header className="grid-container">
         <div className="header-content" tabIndex="0" onClick={() => setSelectedFeature(null)} onKeyDown={(e) => e.key === 'Enter' && setSelectedFeature(null)}>
           <h1>Code Accessibility AI <CodeIcon size={43} color="#bb86fc" weight="bold" /></h1>
-          <p>Your AI-powered partner for accessible development</p>
+          <h3>Your AI-powered partner for accessible development</h3>
         </div>
         <section className="card-explainer">
           <h2>Upload Your Code</h2>

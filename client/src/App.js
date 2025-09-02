@@ -24,7 +24,7 @@ function App() {
           <div>
             <header className="header-content-home">
               <h1>Code Accessibility AI <CodeIcon size={43} color="#bb86fc" weight="bold" /></h1>
-              <p>Your AI-powered partner for accessible development</p>
+              <h3>Your AI-powered partner for accessible development</h3>
             </header>
             <main className="grid-container">
               <div className="card" tabIndex="0" onClick={() => setSelectedFeature('explainer')} onKeyDown={(e) => e.key === 'Enter' && setSelectedFeature('explainer')}>
